@@ -9,7 +9,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <Featured></Featured>
         <CategoryList></CategoryList>
-        <div className="flex gap-5">
+        <div className="flex gap-5 py-20">
           <div className="w-2/3">
             {" "}
             <CardList></CardList>
