@@ -4,6 +4,8 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 import { CiInstagram } from 'react-icons/ci';
 import { FaTwitter } from 'react-icons/fa';
 import { useState } from 'react';
+import Themetoggle from '../themetoggle/Themetoggle';
+import Authlinks from '../authlinks/Authlinks';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 py-4 px-10">
       <div className="container mx-auto flex justify-between items-center">
         {/* Left side: Social Icons */}
         <div className="flex space-x-4">
@@ -30,15 +32,16 @@ export default function Navbar() {
 
         {/* Middle: Website Name */}
         <div className="text-white text-xl font-bold">
-          <Link href="/">MyWebsite</Link>
+          <Link href="/">NazneenBlog</Link>
         </div>
 
         {/* Right side: Menu */}
         <div className="hidden md:flex space-x-6">
+          <Themetoggle></Themetoggle>
           <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
           <Link href="/about" className="text-gray-300 hover:text-white">About</Link>
-          <Link href="/services" className="text-gray-300 hover:text-white">Services</Link>
           <Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link>
+          <Authlinks></Authlinks>
         </div>
 
         {/* Mobile menu button */}
@@ -54,8 +57,8 @@ export default function Navbar() {
         <div className="md:hidden">
           <Link href="/" className="block text-gray-300 hover:bg-gray-700 px-2 py-1">Home</Link>
           <Link href="/about" className="block text-gray-300 hover:bg-gray-700 px-2 py-1">About</Link>
-          <Link href="/services" className="block text-gray-300 hover:bg-gray-700 px-2 py-1">Services</Link>
           <Link href="/contact" className="block text-gray-300 hover:bg-gray-700 px-2 py-1">Contact</Link>
+          <Authlinks></Authlinks>
         </div>
       )}
     </nav>

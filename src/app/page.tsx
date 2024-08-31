@@ -5,12 +5,14 @@ import CardList from '@/components/cardlist/CardList'
 import Menu from '@/components/menu/Menu'
 export default function Home() {
   return (
-    <div>
+    <div className=' bg-slate-300 px-10'>
+      <div className='max-w-7xl mx-auto'>
       <Featured></Featured>
       <CategoryList></CategoryList>
       <div>
         <CardList></CardList>
         <Menu></Menu>
+      </div>
       </div>
     </div>
   )
