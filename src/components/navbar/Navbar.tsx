@@ -4,7 +4,7 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 import { CiInstagram } from 'react-icons/ci';
 import { FaTwitter } from 'react-icons/fa';
 import { useState } from 'react';
-import Themetoggle from '../themetoggle/Themetoggle';
+
 import Authlinks from '../authlinks/Authlinks';
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* Right side: Menu */}
         <div className="hidden md:flex space-x-6">
-          <Themetoggle></Themetoggle>
+        
           <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
           <Link href="/about" className="text-gray-300 hover:text-white">About</Link>
           <Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link>
