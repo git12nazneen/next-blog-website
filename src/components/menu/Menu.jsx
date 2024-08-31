@@ -1,5 +1,4 @@
 import React from 'react'
-import Pagination from '@/components/pagination/Pagination'
 import card1 from '@/app/list1.jpg'
 import Image from 'next/image';
 
@@ -136,8 +135,6 @@ export default function Menu() {
       </div>
 
 
-      {/* pagination */}
-      <Pagination></Pagination>
     </div>
   )
 }
