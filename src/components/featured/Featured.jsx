@@ -3,14 +3,18 @@ import featureImg from "@/app/feature.jpg";
 export default function Featured() {
   return (
     <div className=" text-black py-20">
+        <div className="mx-auto text-center">
+          <h1 className="text-4xl font-bold text-center pb-10">Discover my stories and creative ideas</h1>
+        </div>
       <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <Image
             src={featureImg}
             alt="Beautiful Landscape"
-            width={600}
-            height={500}
+            width={400}
+            height={300}
             className="rounded-lg shadow-lg"
           />
         </div>
@@ -22,7 +26,7 @@ export default function Featured() {
           <p className="text-lg leading-relaxed mb-6">
             Nature is an endless source of wonder, a vast tapestry of life that
             unfolds in every direction. From the towering mountains that scrape
-            the sky to the deep, mysterious oceans teeming with life, nature's
+            the sky to the deep, mysterious oceans teeming with life, natures
             beauty is boundless. It offers solace to the weary, inspiration to
             the dreamer, and a sense of connection to all who pause to observe
             its majesty.
