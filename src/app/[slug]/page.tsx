@@ -42,7 +42,39 @@ export default function SinglePage() {
       <p className='mb-3'>"High above the bustling cities, the mountains stand tall and majestic, calling out to those who seek adventure. From snow-capped peaks to lush valleys, the alpine landscape offers a breathtaking escape into the natural world. This journey will take you through rugged trails, past crystal-clear lakes, and into the heart of the mountains."</p>
    </div>
       <div className='w-1/3'>
-       <Card></Card>
+      <div className='p-4'>
+      <p className='text-gray-600'>Whats new</p>
+      <h1 className='font-bold text-3xl mt-1'>Most Popular</h1>
+     
+      <div className="mb-6 mt-10">
+            <span className={`inline-block bg-orange-400 text-white px-2 py-1 rounded-full text-sm`}>
+            History
+            </span>
+            <h3 className="text-xl mt-2">Sylhet is a nature of beauty. Its natural places fasinate me very much</h3>
+            <div className="text-gray-500 text-sm mt-1">
+            Date: 2022-2-4
+            </div>
+          </div>
+      <div className="mb-6">
+            <span className={`inline-block bg-red-400 text-white px-2 py-1 rounded-full text-sm`}>
+           Nature
+            </span>
+            <h3 className="text-xl mt-2">Coxs bazar is a longest  sea beach in the world.Its water color blue.</h3>
+            <div className="text-gray-500 text-sm mt-1">
+            Date: 2022-2-4
+            </div>
+          </div>
+      <div className="mb-6">
+            <span className={`inline-block bg-green-400 text-white px-2 py-1 rounded-full text-sm`}>
+            Nature
+            </span>
+            <h3 className="text-xl mt-2">Srimangol tea garden is most beautiful place i have ever seen.</h3>
+            <div className="text-gray-500 text-sm mt-1">
+            Date: 2022-2-4
+            </div>
+          </div>
+      
+      </div>
       </div>
   </div>
   </div>
