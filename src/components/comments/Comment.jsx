@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import card1 from '@/app/list1.jpg'
-export default function Comment() {
-    const status = 'authentication'
+
+
+const Comment = () => {
+  const status = 'authentication'
   return (
     <div className='my-10'>
         <h3 className="text-gray-900 font-bold text-3xl my-5">Comments</h3>
@@ -22,7 +23,7 @@ export default function Comment() {
         <div className='my-10'>
          <div className="flex items-center mb-3">
         <Image
-          src={card1}
+          src='/list1.jpg'
           alt="Author Avatar"
           width={40}
           height={40}
@@ -38,7 +39,7 @@ export default function Comment() {
         <div className='my-10'>
          <div className="flex items-center mb-3">
         <Image
-          src={card1}
+          src='/list1.jpg'
           alt="Author Avatar"
           width={40}
           height={40}
@@ -54,7 +55,7 @@ export default function Comment() {
         <div className='my-10'>
          <div className="flex items-center mb-3">
         <Image
-          src={card1}
+          src='/list1.jpg'
           alt="Author Avatar"
           width={40}
           height={40}
@@ -69,4 +70,6 @@ export default function Comment() {
      </div>
     </div>
   )
-}
+};
+
+export default Comment;

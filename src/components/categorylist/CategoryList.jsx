@@ -6,7 +6,9 @@ const categories = [
   { name: 'Culture', imageSrc: 'https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', bgColor: 'bg-orange-100' },
   { name: 'Coding', imageSrc: 'https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', bgColor: 'bg-purple-100' },
 ];
-export default function CategoryList() {
+import React from 'react';
+
+const CategoryList = () => {
   return (
     <div className="py-2">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Popular Categories</h2>
@@ -29,4 +31,6 @@ export default function CategoryList() {
       </div>
     </div>
   )
-}
+};
+
+export default CategoryList;

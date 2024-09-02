@@ -1,6 +1,8 @@
 import Image from "next/image";
-import featureImg from "@/app/feature.jpg";
-export default function Featured() {
+
+import React from 'react';
+
+const Featured = () => {
   return (
     <div className=" text-black py-20">
         <div className="mx-auto text-center">
@@ -11,7 +13,7 @@ export default function Featured() {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <Image
-            src={featureImg}
+            src="/feature.jpg"
             alt="Beautiful Landscape"
             width={400}
             height={300}
@@ -38,4 +40,6 @@ export default function Featured() {
       </div>
     </div>
   );
-}
+};
+
+export default Featured;

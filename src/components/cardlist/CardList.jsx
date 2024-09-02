@@ -1,6 +1,8 @@
 import Card from "../card/Card";
 import Pagination from "../pagination/Pagination";
-export default function CardList() {
+import React from 'react';
+
+const CardList = () => {
   return (
     <>
       <Card></Card>
@@ -11,4 +13,6 @@ export default function CardList() {
       <Pagination></Pagination>
     </>
   );
-}
+};
+
+export default CardList;

@@ -1,7 +1,11 @@
+'use client'
+import {  signIn, useSession } from "next-auth/react";
 import React from "react";
 import { FaGoogle, FaGithub, FaFacebook } from "react-icons/fa";
 
 const LoginPage = () => {
+  const {data, status} = useSession()
+console.log(data, status)
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
       <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md transform hover:scale-105 transition-transform duration-300">
@@ -48,6 +52,7 @@ const LoginPage = () => {
           <p className="text-gray-600 mb-4">Or sign in with:</p>
           <div className="flex justify-center space-x-6">
             <button
+            onClick={()=>signIn('google')}
               className="text-red-500 hover:text-red-700 transform hover:scale-110 transition-transform duration-200"
               aria-label="Login with Google"
             >

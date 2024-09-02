@@ -1,9 +1,11 @@
 // write rfc
-import Featured from "@/components/featured/Featured";
-import CategoryList from "@/components/categorylist/CategoryList";
-import CardList from "@/components/cardlist/CardList";
-import Menu from "@/components/menu/Menu";
-export default function Home() {
+import Featured from "../components/featured/Featured";
+import CardList from '../components/cardlist/CardList'
+import CategoryList from '../components/categorylist/CategoryList'
+import React from 'react';
+import Menu from "../components/menu/Menu";
+
+const Home = () => {
   return (
     <div className=" bg-slate-300 dark:bg-slate-900 dark:text-white px-10">
       <div className="max-w-7xl mx-auto">
@@ -22,4 +24,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

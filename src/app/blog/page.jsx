@@ -1,8 +1,8 @@
-import CardList from '@/components/cardlist/CardList'
-import Menu from '@/components/menu/Menu'
+import CardList from '../components/cardlist/CardList'
+import Menu from '../components/menu/Menu'
 import React from 'react'
 
-export default function Blog() {
+const BLog = () => {
   return (
     <div>
       <div className='bg-orange-600 py-6 mx-auto'><h1 className='text-white text-center font-bold text-3xl'>Style blog</h1></div>
@@ -18,4 +18,6 @@ export default function Blog() {
         </div>
     </div>
   )
-}
+};
+
+export default BLog;

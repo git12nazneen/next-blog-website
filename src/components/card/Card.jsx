@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import card1 from '@/app/list1.jpg'
-export default function Card() {
+
+const Card = () => {
   return (
     <div className="py-8">
     <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent Posts</h2>
@@ -9,7 +9,7 @@ export default function Card() {
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <Image
-          src={card1}  // Replace with your image path
+          src="/list1.jpg"  // Replace with your image path
           alt="Post Image"
           width={800}
           height={600}
@@ -34,4 +34,6 @@ export default function Card() {
     </div>
   </div>
   )
-}
+};
+
+export default Card;

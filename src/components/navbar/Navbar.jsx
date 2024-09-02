@@ -7,7 +7,9 @@ import { useState } from 'react';
 
 import Authlinks from '../authlinks/Authlinks';
 
-export default function Navbar() {
+import React from 'react';
+
+const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -63,4 +65,6 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar;

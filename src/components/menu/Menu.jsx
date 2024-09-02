@@ -1,5 +1,4 @@
 import React from 'react'
-import card1 from '@/app/list1.jpg'
 import Image from 'next/image';
 
 const posts = [
@@ -75,7 +74,8 @@ const postd = [
     imageSrc: 'https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
 ];
-export default function Menu() {
+
+const Menu = () => {
   return (
     <div>
  <div className="p-4">
@@ -137,4 +137,6 @@ export default function Menu() {
 
     </div>
   )
-}
+};
+
+export default Menu;

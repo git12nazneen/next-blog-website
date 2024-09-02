@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function Authlinks() {
+const Authlinks = () => {
   const status = 'authentication';  // Match this value with the condition
 
   return (
@@ -18,4 +18,6 @@ export default function Authlinks() {
       )}
     </div>
   );
-}
+};
+
+export default Authlinks;
