@@ -1,11 +1,19 @@
 'use client'
 import {  signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { FaGoogle, FaGithub, FaFacebook } from "react-icons/fa";
 
 const LoginPage = () => {
   const {data, status} = useSession()
+  const router = useRouter()
 console.log(data, status)
+if(status === 'loading'){
+  return <div>Loading....</div>
+}
+if(status === 'authenticated'){
+  router.push('/')
+}
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
       <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md transform hover:scale-105 transition-transform duration-300">
