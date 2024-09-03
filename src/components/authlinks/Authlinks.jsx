@@ -1,3 +1,4 @@
+import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -13,7 +14,7 @@ const Authlinks = () => {
       ) : (
         <div>
           <Link href="/write">Write</Link>
-          <span className='mx-5'>Logout</span>
+          <span onClick={signOut} className='mx-5'>Logout</span>
         </div>
       )}
     </div>
