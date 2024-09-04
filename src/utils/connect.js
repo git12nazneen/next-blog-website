@@ -1,17 +1,17 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client';
 
-let prisma
-if(process.env.NODE_ENV === 'production'){
-    prisma = new PrismaClient()
-}else{
-    if(!global.prisma){
-        global.prisma = new PrismaClient()
+let prisma;
+if (process.env.NODE_ENV === 'production') {
+    prisma = new PrismaClient();
+} else {
+    if (!globalThis.prisma) {
+        globalThis.prisma = new PrismaClient();
     }
-    prisma = global.prisma
+    prisma = globalThis.prisma;
 }
 
-export default prisma
-
+// console.log('Prisma instance:', prisma);
+export default prisma;
 
 
 
