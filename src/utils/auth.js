@@ -1,8 +1,11 @@
 
 
+import { PrismaAdapter } from "@auth/prisma-adapter"
+
 import GoogleProvider from "next-auth/providers/google"
 
 export const authOptions = {
+  adapter: PrismaAdapter(Prisma),
   // Configure one or more authentication providers
   providers: [
     GoogleProvider({

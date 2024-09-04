@@ -1,13 +1,13 @@
-import { signOut } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
 import React from 'react';
 
 const Authlinks = () => {
-  const status = 'authentication';  // Match this value with the condition
+  const {status} = useSession();  // Match this value with the condition
 
   return (
     <div className='text-gray-300'>
-      {status === 'notauthentication' ? (  // Correct the condition here
+      {status === 'unauthenticated' ? (  // Correct the condition here
         <div>
           <Link href="/login">Login</Link>
         </div>
