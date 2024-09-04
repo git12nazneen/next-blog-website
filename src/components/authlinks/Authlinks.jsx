@@ -14,7 +14,7 @@ const Authlinks = () => {
       ) : (
         <div>
           <Link href="/write">Write</Link>
-          <span onClick={signOut} className='mx-5'>Logout</span>
+          <span onClick={signOut} className='mx-5 bg-black hover:bg-slate-400 hover:text-black py-2 px-3 rounded-lg'>Logout</span>
         </div>
       )}
     </div>
