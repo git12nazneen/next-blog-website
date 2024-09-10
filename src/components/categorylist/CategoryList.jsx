@@ -8,23 +8,35 @@ const categories = [
 ];
 import React from 'react';
 
-const CategoryList = () => {
+const getData = async () =>{
+  const res = await fetch('http://localhost:3000/api/categories',{
+    cache: 'no-store'
+  })
+
+  if(!res.ok){
+    throw new Error('Failed');
+  }
+  return res.json()
+}
+
+const dataList = async () => {
+  const data = await getData();
   return (
     <div className="py-2">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Popular Categories</h2>
       <div className="flex flex-col lg:flex-row gap-2">
-        {categories.map((category, index) => (
+        {data.map((data) => (
           <div
-            key={index}
-            className={`w-1/6 flex items-center justify-center p-4 rounded-lg shadow-md ${category.bgColor}`}
+            key={data._id}
+            className={`w-1/6 flex items-center justify-center p-4 rounded-lg shadow-md ${data.bgColor}`}
           >
             <div className="flex items-center space-x-1">
             <img
-                src={category.imageSrc}
-                alt={category.name}
+                src={data.img}
+                alt={data.title}
                 className="w-8 h-8 rounded-full object-cover"
               />
-              <span className="font-medium text-gray-700">{category.name}</span>
+              <span className="font-medium text-gray-700">{data.title}</span>
             </div>
           </div>
         ))}
@@ -33,4 +45,4 @@ const CategoryList = () => {
   )
 };
 
-export default CategoryList;
+export default dataList;
