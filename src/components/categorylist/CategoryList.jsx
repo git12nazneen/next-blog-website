@@ -20,17 +20,16 @@ const getData = async () =>{
 }
 
 const dataList = async () => {
-  const data = await getData();
+  const datas = await getData();
   return (
     <div className="py-2">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Popular Categories</h2>
-      <h3 className='border-b-2 border-gray-600 pb-3'>Explore our categories</h3>
-
+     
       <div className="flex flex-col lg:flex-row gap-2">
-        {data.map((data) => (
+        {datas.map((data) => (
           <div
             key={data._id}
-            className={`w-1/6 flex items-center justify-center p-4 rounded-lg shadow-md ${data.bgColor}`}
+            className="w-1/6 bg-gray-200 flex items-center justify-center p-4 rounded-lg shadow-md "
           >
             <div className="flex items-center space-x-1">
             <img
