@@ -24,7 +24,8 @@ const dataList = async () => {
   return (
     <div className="py-2">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Popular Categories</h2>
-      <h3>Explore our categories</h3>
+      <h3 className='border-b-2 border-gray-600 pb-3'>Explore our categories</h3>
+
       <div className="flex flex-col lg:flex-row gap-2">
         {data.map((data) => (
           <div
