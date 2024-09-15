@@ -5,7 +5,8 @@ import CategoryList from '../components/categorylist/CategoryList'
 import React from 'react';
 import Menu from "../components/menu/Menu";
 
-const Home = () => {
+const Home = ({searchParams}) => {
+  const page = parseInt(searchParams.page) || 1;
   return (
     <div className=" bg-slate-300 dark:bg-slate-900 dark:text-white px-10">
       <div className="max-w-7xl mx-auto">
@@ -14,7 +15,7 @@ const Home = () => {
         <div className="flex gap-5 py-20">
           <div className="w-2/3">
             {" "}
-            <CardList></CardList>
+            <CardList page={page}></CardList>
           </div>
           <div className="w-1/3">
             {" "}

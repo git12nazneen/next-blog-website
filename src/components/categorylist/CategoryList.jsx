@@ -6,6 +6,7 @@ const categories = [
   { name: 'Culture', imageSrc: 'https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', bgColor: 'bg-orange-100' },
   { name: 'Coding', imageSrc: 'https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', bgColor: 'bg-purple-100' },
 ];
+import Image from 'next/image';
 import React from 'react';
 
 const getData = async () =>{
@@ -32,11 +33,11 @@ const dataList = async () => {
             className="w-1/6 bg-gray-200 flex items-center justify-center p-4 rounded-lg shadow-md "
           >
             <div className="flex items-center space-x-1">
-            <img
+           {data.img && <Image
                 src={data.img}
                 alt={data.title}
                 className="w-8 h-8 rounded-full object-cover"
-              />
+              />}
               <span className="font-medium text-gray-700">{data.title}</span>
             </div>
           </div>

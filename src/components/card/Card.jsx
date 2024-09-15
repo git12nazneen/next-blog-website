@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
+
+
 const Card = () => {
+
   return (
     <div className="py-8">
     <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent Posts</h2>
