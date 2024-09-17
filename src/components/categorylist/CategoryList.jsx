@@ -33,11 +33,15 @@ const dataList = async () => {
             className="w-1/6 bg-gray-200 flex items-center justify-center p-4 rounded-lg shadow-md "
           >
             <div className="flex items-center space-x-1">
-           {data.img && <Image
-                src={data.img}
-                alt={data.title}
-                className="w-8 h-8 rounded-full object-cover"
-              />}
+           {data.img &&
+            <Image
+            src={data.img}
+            alt={data.title}
+            width={32} // Specify the width (for example, 8 * 4)
+            height={32} // Specify the height (for example, 8 * 4)
+            className="w-8 h-8 rounded-full object-cover" // This keeps your Tailwind styling
+          />
+              }
               <span className="font-medium text-gray-700">{data.title}</span>
             </div>
           </div>
