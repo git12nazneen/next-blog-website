@@ -21,7 +21,7 @@ const CardList = async ({page}) => {
       <Card></Card>
       <Card></Card>
       <Card></Card>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aliquam voluptas ullam exercitationem, tenetur, alias voluptate voluptatum ipsa, deleniti expedita iure magni fugit. Impedit, ducimus sed dolor odio saepe quibusdam ipsum nostrum possimus quaerat dolore sapiente cum illo nemo, delectus magnam tempore est quas voluptatem quisquam quis. Sit, deleniti perspiciatis!</p>
+     
       {/* pagination */}
       <Pagination></Pagination>
     </>
