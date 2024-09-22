@@ -25,7 +25,6 @@ const dataList = async () => {
   return (
     <div className="py-2">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Popular Categories</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit deleniti dolore voluptates officiis! Eveniet quod similique inventore quisquam explicabo ipsa natus alias mollitia! Possimus tempora consequatur corporis pariatur iusto harum fuga facere minima, fugit laboriosam nisi fugiat similique in omnis saepe! Adipisci eveniet, voluptas velit mollitia architecto officiis tempora asperiores earum sed doloribus ut iste expedita beatae hic voluptates in aut ratione officia nihil ex! Assumenda omnis officia debitis quas voluptatum perspiciatis quibusdam rem architecto. Expedita, corrupti quam? Beatae incidunt sapiente atque aperiam. Eum, doloremque saepe, iusto sunt veritatis enim odit perferendis laboriosam eos ad accusamus eveniet possimus laudantium!</p>
       <div className="flex flex-col lg:flex-row gap-2">
         {datas.map((data) => (
           <div
